@@ -690,6 +690,12 @@
 		text-align: center;
 		z-index: 1;
 
+		img {
+			border-radius: 0.5em;
+			width: 80%;
+			margin: 20px;
+		}
+
 		h2 {
 			color: #fff;
 			font-size: 2em;
