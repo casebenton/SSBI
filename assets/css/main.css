@@ -1241,7 +1241,7 @@ a {
   text-decoration: none;
   border-bottom: dotted 1px #62676c; }
   a:hover {
-    color: #f35858;
+    color: #a81c1c;
     border-bottom-color: rgba(255, 255, 255, 0); }
 
 strong, b {
@@ -1299,7 +1299,7 @@ header {
   margin-bottom: 1.5em; }
   header > p {
     display: block;
-    color: #f35858;
+    color: #a81c1c;
     padding: 0.75em 0 1em 0;
     font-size: 1.5em;
     line-height: 1.5em; }
@@ -1475,7 +1475,7 @@ button,
   input[type="reset"]:hover,
   button:hover,
   .button:hover {
-    color: #f35858;
+    color: #a81c1c;
     border-color: rgba(243, 88, 88, 0.5); }
 
 /* Icons */
@@ -1628,7 +1628,7 @@ button,
   .dropotron li:first-child > a, .dropotron li:first-child > span {
     border-top: 0; }
   .dropotron li.active > a, .dropotron li.active > span {
-    color: #f35858; }
+    color: #a81c1c; }
   .dropotron.level-0 {
     font-size: 0.9em;
     margin-top: 0; }
