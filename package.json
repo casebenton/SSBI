@@ -8,7 +8,9 @@
   },
   "scripts": {
     "styles": "node_modules/.bin/node-sass assets/sass/ --output assets/css/ --sourcemap=none",
-    "build": "npm run styles"
+    "bower": "./node_modules/.bin/bower install",
+    "build": "npm run bower && npm run styles",
+    "host": "npm run build && ./node_modules/.bin/http-server"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,8 @@
   },
   "homepage": "https://github.com/casebenton/SSBI#readme",
   "devDependencies": {
+    "bower": "^1.8.0",
+    "http-server": "^0.9.0",
     "node-sass": "^4.1.1"
   }
 }
