@@ -1621,10 +1621,11 @@ button,
   color: #fff;
   text-align: center;
   z-index: 1; }
-  #hero img {
-    border-radius: 0.5em;
+  #hero .cover-carousel {
     width: 80%;
-    margin: 20px; }
+    margin: 20px auto; }
+  #hero img {
+    border-radius: 0.5em; }
   #hero h2 {
     color: #fff;
     font-size: 2em; }

@@ -87,3 +87,15 @@
 	});
 
 })(jQuery);
+
+var $jq = jQuery.noConflict();
+
+(function($) {
+	$(document).ready(function(){
+		$('.cover-carousel').slick({
+			autoplay: true,
+			autoplaySpeed: 3000,
+			fade: true,
+		});
+	});
+})($jq);

@@ -692,10 +692,13 @@ $highlight: #a81c1c;
 		text-align: center;
 		z-index: 1;
 
+		.cover-carousel {
+			width: 80%;
+			margin: 20px auto;
+		}
+
 		img {
 			border-radius: 0.5em;
-			width: 80%;
-			margin: 20px;
 		}
 
 		h2 {
