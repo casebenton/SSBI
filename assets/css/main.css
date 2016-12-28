@@ -1529,8 +1529,6 @@ button,
   #logo a {
     display: block;
     width: 100%;
-    height: 4em;
-    line-height: 4em;
     background: rgba(255, 255, 255, 0.15);
     border: solid 1px;
     border-color: #fff;
@@ -1886,9 +1884,7 @@ button,
     position: relative; }
     #logo a {
       border: solid 1px rgba(255, 255, 255, 0.75);
-      border-radius: 0.35em;
-      height: 3em;
-      line-height: 3em; }
+      border-radius: 0.35em; }
   /* Nav */
   #nav {
     display: none; }
