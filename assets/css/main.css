@@ -1697,6 +1697,15 @@ button,
   #footer header.major {
     margin-bottom: 3em; }
 
+.supporters {
+  text-align: center; }
+  .supporters a {
+    text-decoration: none; }
+  .supporters img {
+    max-height: 200px;
+    max-width: 80%;
+    margin: 10px; }
+
 /* Copyright */
 #copyright {
   position: relative;

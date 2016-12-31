@@ -814,6 +814,19 @@ $highlight: #a81c1c;
 		}
 	}
 
+
+	.supporters {
+		a {
+			text-decoration: none;
+		}
+		text-align: center;
+		img {
+			max-height: 200px;
+			max-width: 80%;
+			margin: 10px;
+		}
+	}
+
 /* Copyright */
 
 	#copyright {
