@@ -1517,6 +1517,8 @@ button,
   padding: 6em 0 6em 0;
   background-image: url("images/overlay.png"), url("images/footer.svg");
   background-size: 128px 128px,				100% 100%; }
+  #footer-wrapper a.button {
+    margin-bottom: 5em; }
 
 /* Header */
 #logo {
@@ -1696,6 +1698,8 @@ button,
   z-index: 1; }
   #footer header.major {
     margin-bottom: 3em; }
+  #footer header .button {
+    margin-bottom: 4em; }
 
 .supporters {
   text-align: center; }
