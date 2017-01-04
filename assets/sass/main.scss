@@ -232,6 +232,13 @@ $highlight: #a81c1c;
 		}
 	}
 
+	.profile {
+		width: 50%;
+		max-width: 350px;
+		border-radius: 1em;
+		
+	}
+
 	a {
 		&.image {
 			&:hover {

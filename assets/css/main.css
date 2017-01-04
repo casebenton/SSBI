@@ -1288,6 +1288,11 @@ header {
       margin: 0 auto;
       width: auto; }
 
+.profile {
+  width: 50%;
+  max-width: 350px;
+  border-radius: 1em; }
+
 a.image:hover {
   opacity: 0.85; }
 
