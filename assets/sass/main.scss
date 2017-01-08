@@ -7,12 +7,6 @@
 
 $highlight: #a81c1c;
 
-/*
-	Telephasic by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 	@import "libs/skel";
 
 	@include skel-breakpoints((
@@ -234,7 +228,14 @@ $highlight: #a81c1c;
 		width: 50%;
 		max-width: 350px;
 		border-radius: 1em;
+	}
 
+	.profile-break {
+		display: block;
+		background: black;
+		height: 1px;
+		width: 90%;
+		margin: 100px auto;
 	}
 
 	a {
