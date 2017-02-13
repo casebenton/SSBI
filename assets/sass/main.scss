@@ -224,7 +224,80 @@ $highlight: #a81c1c;
 		}
 	}
 
-	.profile {
+	.profile-row {
+		margin: 25px 0;
+		text-align: center;
+	}
+
+	.profile,
+	.profile-group2,
+	.profile-group3 {
+		display: inline-block;
+		position: relative;
+		margin: 0;
+
+		&:hover,
+		&.active {
+			cursor: pointer;
+			&:not(.full) {
+				div h3 {
+					font-size: 1em;
+					display: inline-block;
+					position: absolute;
+					bottom: 5px;
+					left: 0;
+					background: rgba(255, 255, 255, 0.8);
+					width: 150px;
+				}
+			}
+		}
+
+		&.inactive {
+			&:not(:hover) {
+				img {
+					transition: 0.25s;
+					filter: grayscale(100%);
+				}
+			}
+		}
+
+		&.full {
+			background: #52575c;
+			padding: 1em;
+			border-radius: 1em;
+			div h3,
+			div {
+				h3, h4, p {
+					color: white;
+					display: inline-block;
+					position: relative;
+					width: 100%;
+				}
+				h3, h4, p {
+					color: white;
+					text-align: center;
+				}
+			}
+		}
+
+		&.hidden {
+			display: none;
+		}
+
+		img {
+			transition: 0.25s;
+			border-radius: 1em;
+			width: 150px;
+		}
+		div h3,
+		div h4,
+		div p {
+			display: none;
+			text-align: left;
+		}
+	}
+
+	.profile-img {
 		width: 50%;
 		max-width: 350px;
 		border-radius: 1em;

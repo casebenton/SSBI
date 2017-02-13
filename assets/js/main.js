@@ -86,6 +86,70 @@
 
 	});
 
+$prof = $('#desktop-profile');
+$('.profile').click(function() {
+	if($(window).width() < 736) {
+		$(this).toggleClass('full').siblings().toggleClass('hidden');
+		$("html, body").animate({ scrollTop: $('#leadership').offset().top }, 400);
+	} else {
+		if($(this).hasClass('active')) {
+			$(this).removeClass('active');
+			$prof.addClass('hidden');
+			$(this).siblings().removeClass('inactive');
+		} else {
+			$(this).siblings().removeClass('active').addClass('inactive');
+			$(this).addClass('active').removeClass('inactive');
+			$prof.removeClass('hidden');
+			$prof.find('h3')[0].innerHTML = $(this).find('h3')[0].innerHTML;
+			$prof.find('h4')[0].innerHTML = $(this).find('h4')[0].innerHTML;
+			$prof.find('p')[0].innerHTML = $(this).find('p')[0].innerHTML;
+		}
+	}
+});
+
+
+$prof2 = $('#desktop-profile-group2');
+$('.profile-group2').click(function() {
+	if($(window).width() < 736) {
+		$(this).toggleClass('full').siblings().toggleClass('hidden');
+		$("html, body").animate({ scrollTop: $('#leadership-group2').offset().top }, 400);
+	} else {
+		if($(this).hasClass('active')) {
+			$(this).removeClass('active');
+			$prof2.addClass('hidden');
+			$(this).siblings().removeClass('inactive');
+		} else {
+			$(this).siblings().removeClass('active').addClass('inactive');
+			$(this).addClass('active').removeClass('inactive');
+			$prof2.removeClass('hidden');
+			$prof2.find('h3')[0].innerHTML = $(this).find('h3')[0].innerHTML;
+			$prof2.find('h4')[0].innerHTML = $(this).find('h4')[0].innerHTML;
+			$prof2.find('p')[0].innerHTML = $(this).find('p')[0].innerHTML;
+		}
+	}
+});
+
+$prof3 = $('#desktop-profile-group3');
+$('.profile-group3').click(function() {
+	if($(window).width() < 736) {
+		$(this).toggleClass('full').siblings().toggleClass('hidden');
+		$("html, body").animate({ scrollTop: $('#leadership-group2').offset().top }, 400);
+	} else {
+		if($(this).hasClass('active')) {
+			$(this).removeClass('active');
+			$prof3.addClass('hidden');
+			$(this).siblings().removeClass('inactive');
+		} else {
+			$(this).siblings().removeClass('active').addClass('inactive');
+			$(this).addClass('active').removeClass('inactive');
+			$prof3.removeClass('hidden');
+			$prof3.find('h3')[0].innerHTML = $(this).find('h3')[0].innerHTML;
+			$prof3.find('h4')[0].innerHTML = $(this).find('h4')[0].innerHTML;
+			$prof3.find('p')[0].innerHTML = $(this).find('p')[0].innerHTML;
+		}
+	}
+});
+
 })(jQuery);
 
 var $jq = jQuery.noConflict();
