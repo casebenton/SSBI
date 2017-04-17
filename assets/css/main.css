@@ -1283,10 +1283,17 @@ button,
   background-size: 128px 128px,				100% 100%; }
   #footer-wrapper a.button {
     margin-bottom: 5em; }
+  #footer-wrapper .fb-link {
+    text-align: center; }
+    #footer-wrapper .fb-link img {
+      width: 200px; }
 
 /* Header */
 #logo {
   z-index: 1; }
+  #logo img {
+    max-height: 150px;
+    max-width: 90%; }
   #logo h1, #logo a {
     line-height: normal; }
   #logo h1 a {
@@ -1460,7 +1467,7 @@ button,
   .supporters a {
     text-decoration: none; }
   .supporters img {
-    max-height: 200px;
+    max-height: 120px;
     max-width: 80%;
     margin: 10px; }
 
