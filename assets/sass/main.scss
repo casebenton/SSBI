@@ -634,6 +634,7 @@ $highlight: #a81c1c;
 		img {
 			max-height: 150px;
 			max-width: 90%;
+			border-radius: 10px;
 		}
 
 		h1, a {
@@ -1285,11 +1286,6 @@ $highlight: #a81c1c;
 
 				h2 {
 					font-size: 1rem;
-				}
-
-				a {
-					border: solid 1px rgba(255, 255, 255, 0.75);
-					border-radius: 0.35em;
 				}
 			}
 

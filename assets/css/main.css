@@ -1293,7 +1293,8 @@ button,
   z-index: 1; }
   #logo img {
     max-height: 150px;
-    max-width: 90%; }
+    max-width: 90%;
+    border-radius: 10px; }
   #logo h1, #logo a {
     line-height: normal; }
   #logo h1 a {
@@ -1660,9 +1661,6 @@ button,
       font-size: 1.8rem; }
     #logo h2 {
       font-size: 1rem; }
-    #logo a {
-      border: solid 1px rgba(255, 255, 255, 0.75);
-      border-radius: 0.35em; }
   /* Nav */
   #nav {
     display: none; }
