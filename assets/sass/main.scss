@@ -555,7 +555,17 @@ $highlight: #a81c1c;
 		background: #fff;
 		overflow-x: hidden;
 		padding: 2em 0;
+		h1 {
+			font-size: 2em;
+			padding-bottom: 1em;
+		}
 	}
+
+	.alternate:nth-child(odd) {
+		background: #ddd;
+	}
+
+	.wrapper
 
 	.image-wrapper {
 		position: relative;
