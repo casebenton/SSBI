@@ -558,6 +558,10 @@ $highlight: #a81c1c;
 		h1 {
 			font-size: 2em;
 			padding-bottom: 1em;
+			&.resources-header {
+				font-size: 3em;
+				line-height: 1.2em;
+			}
 		}
 	}
 
