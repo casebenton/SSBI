@@ -225,13 +225,15 @@ $highlight: #a81c1c;
 	}
 
 	.profile-row {
-		margin: 25px 0;
+		margin: 25px auto;
+		max-width: 650px;
 		text-align: center;
 	}
 
 	.profile,
 	.profile-group2,
-	.profile-group3 {
+	.profile-group3,
+	.profile-group4 {
 		display: inline-block;
 		position: relative;
 		margin: 0;

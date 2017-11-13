@@ -827,12 +827,14 @@ header {
       width: auto; }
 
 .profile-row {
-  margin: 25px 0;
+  margin: 25px auto;
+  max-width: 650px;
   text-align: center; }
 
 .profile,
 .profile-group2,
-.profile-group3 {
+.profile-group3,
+.profile-group4 {
   display: inline-block;
   position: relative;
   margin: 0; }
@@ -840,13 +842,17 @@ header {
   .profile-group2:hover,
   .profile-group2.active,
   .profile-group3:hover,
-  .profile-group3.active {
+  .profile-group3.active,
+  .profile-group4:hover,
+  .profile-group4.active {
     cursor: pointer; }
     .profile:hover:not(.full) div h3, .profile.active:not(.full) div h3,
     .profile-group2:hover:not(.full) div h3,
     .profile-group2.active:not(.full) div h3,
     .profile-group3:hover:not(.full) div h3,
-    .profile-group3.active:not(.full) div h3 {
+    .profile-group3.active:not(.full) div h3,
+    .profile-group4:hover:not(.full) div h3,
+    .profile-group4.active:not(.full) div h3 {
       font-size: 1em;
       display: inline-block;
       position: absolute;
@@ -856,12 +862,14 @@ header {
       width: 150px; }
   .profile.inactive:not(:hover) img,
   .profile-group2.inactive:not(:hover) img,
-  .profile-group3.inactive:not(:hover) img {
+  .profile-group3.inactive:not(:hover) img,
+  .profile-group4.inactive:not(:hover) img {
     transition: 0.25s;
     filter: grayscale(100%); }
   .profile.full,
   .profile-group2.full,
-  .profile-group3.full {
+  .profile-group3.full,
+  .profile-group4.full {
     background: #52575c;
     padding: 1em;
     border-radius: 1em; }
@@ -880,7 +888,13 @@ header {
     .profile-group3.full div h3 p,
     .profile-group3.full div h3,
     .profile-group3.full div h4,
-    .profile-group3.full div p {
+    .profile-group3.full div p,
+    .profile-group4.full div h3 h3,
+    .profile-group4.full div h3 h4,
+    .profile-group4.full div h3 p,
+    .profile-group4.full div h3,
+    .profile-group4.full div h4,
+    .profile-group4.full div p {
       color: white;
       display: inline-block;
       position: relative;
@@ -900,16 +914,24 @@ header {
     .profile-group3.full div h3 p,
     .profile-group3.full div h3,
     .profile-group3.full div h4,
-    .profile-group3.full div p {
+    .profile-group3.full div p,
+    .profile-group4.full div h3 h3,
+    .profile-group4.full div h3 h4,
+    .profile-group4.full div h3 p,
+    .profile-group4.full div h3,
+    .profile-group4.full div h4,
+    .profile-group4.full div p {
       color: white;
       text-align: center; }
   .profile.hidden,
   .profile-group2.hidden,
-  .profile-group3.hidden {
+  .profile-group3.hidden,
+  .profile-group4.hidden {
     display: none; }
   .profile img,
   .profile-group2 img,
-  .profile-group3 img {
+  .profile-group3 img,
+  .profile-group4 img {
     transition: 0.25s;
     border-radius: 1em;
     width: 150px; }
@@ -921,7 +943,10 @@ header {
   .profile-group2 div p,
   .profile-group3 div h3,
   .profile-group3 div h4,
-  .profile-group3 div p {
+  .profile-group3 div p,
+  .profile-group4 div h3,
+  .profile-group4 div h4,
+  .profile-group4 div p {
     display: none;
     text-align: left; }
 

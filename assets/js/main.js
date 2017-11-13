@@ -133,7 +133,7 @@ $prof3 = $('#desktop-profile-group3');
 $('.profile-group3').click(function() {
 	if($(window).width() < 736) {
 		$(this).toggleClass('full').siblings().toggleClass('hidden');
-		$("html, body").animate({ scrollTop: $('#leadership-group2').offset().top }, 400);
+		$("html, body").animate({ scrollTop: $('#leadership-group3').offset().top }, 400);
 	} else {
 		if($(this).hasClass('active')) {
 			$(this).removeClass('active');
@@ -146,6 +146,26 @@ $('.profile-group3').click(function() {
 			$prof3.find('h3')[0].innerHTML = $(this).find('h3')[0].innerHTML;
 			$prof3.find('h4')[0].innerHTML = $(this).find('h4')[0].innerHTML;
 			$prof3.find('p')[0].innerHTML = $(this).find('p')[0].innerHTML;
+		}
+	}
+});
+
+$prof4 = $('#desktop-profile-group4');
+$('.profile-group4').click(function() {
+	if($(window).width() < 736) {
+		$(this).toggleClass('full').siblings().toggleClass('hidden');
+		$("html, body").animate({ scrollTop: $('#leadership-group4').offset().top }, 400);
+	} else {
+		if($(this).hasClass('active')) {
+			$(this).removeClass('active');
+			$prof4.addClass('hidden');
+			$(this).siblings().removeClass('inactive');
+		} else {
+			$(this).siblings().removeClass('active').addClass('inactive');
+			$(this).addClass('active').removeClass('inactive');
+			$prof4.removeClass('hidden');
+			$prof4.find('h3')[0].innerHTML = $(this).find('h3')[0].innerHTML;
+			$prof4.find('h4')[0].innerHTML = $(this).find('h4')[0].innerHTML;
 		}
 	}
 });
