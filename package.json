@@ -10,7 +10,8 @@
     "styles": "node_modules/.bin/node-sass assets/sass/ --output assets/css/ --sourcemap=none",
     "bower": "./node_modules/.bin/bower install",
     "build": "npm run bower && npm run styles",
-    "host": "npm run build && ./node_modules/.bin/http-server"
+    "host": "npm run build && ./node_modules/.bin/http-server",
+    "postinstall": "node -e \"try { require('fs').symlinkSync(require('path').resolve('node_modules/@bower_components'), 'bower_components', 'junction') } catch (e) { }\""
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,13 @@
     "bower": "^1.8.2",
     "http-server": "^0.11.1",
     "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "@bower_components/dropotron": "n33/jquery.dropotron#^1.4.3",
+    "@bower_components/jquery": "jquery/jquery-dist#^3.1.1",
+    "@bower_components/skel": "n33/skel#^3.0.1"
+  },
+  "engines": {
+    "yarn": ">= 1.0.0"
   }
 }
