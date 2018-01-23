@@ -8,8 +8,7 @@
   },
   "scripts": {
     "styles": "node_modules/.bin/node-sass assets/sass/ --output assets/css/ --sourcemap=none",
-    "bower": "./node_modules/.bin/bower install",
-    "build": "npm run bower && npm run styles",
+    "build": "npm run postinstall && npm run styles",
     "host": "npm run build && ./node_modules/.bin/http-server",
     "postinstall": "node -e \"try { require('fs').symlinkSync(require('path').resolve('node_modules/@bower_components'), 'bower_components', 'junction') } catch (e) { }\""
   },
