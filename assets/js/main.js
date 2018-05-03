@@ -144,7 +144,6 @@ $('.profile-group3').click(function() {
 			$(this).addClass('active').removeClass('inactive');
 			$prof3.removeClass('hidden');
 			$prof3.find('h3')[0].innerHTML = $(this).find('h3')[0].innerHTML;
-			$prof3.find('h4')[0].innerHTML = $(this).find('h4')[0].innerHTML;
 			$prof3.find('p')[0].innerHTML = $(this).find('p')[0].innerHTML;
 		}
 	}
