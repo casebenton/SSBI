@@ -1,10 +1,15 @@
 # Stanford Synapse Group Website
 
+## Dependencies
+```
+yarn
+```
+
 ## To build
 ```
-npm install --save-dev
-npm run build
+yarn
+yarn run build
 ```
 
 ## To host locally for testing purposes
-``npm run host``
+``yarn run host``
